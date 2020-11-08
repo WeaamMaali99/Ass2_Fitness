@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo"
+    android:foregroundTint="#F2B11D12"
+    android:orientation="vertical"
+    tools:context=".Timer">
+
+
+    // tools:ignore="OnClick"
+
+
+    <EditText
+        android:id="@+id/edtMint"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="56dp"
+        android:inputType="number"
+        android:onClick="onClickAdd" />
+
+    <Button
+        android:id="@+id/btnadd"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
+        android:text="Add timer" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="271dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="78dp"
+        android:text="Timer"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#ffffff"
+        android:textSize="45dp" />
+
+    <Button
+        android:id="@+id/btnPause"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="127dp"
+        android:layout_marginBottom="237dp"
+        android:onClick="onClickPause"
+        android:text="Pause"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnStart"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="237dp"
+        android:onClick="onClickStart"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btnStop"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="onClickStop"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/btnBack"
+
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="407dp"
+        android:onClick="btnBack"
+        android:text="Back"
+        android:textColor="?android:attr/colorForeground"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

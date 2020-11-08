@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ass2_Fitness</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="user_name">User Name</string>
+    <string name="welcome_to_fitness_app">Welcome To Fitness App</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo"
+        android:orientation="vertical"
+
+        tools:context=".open">
+
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="405dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:padding="10dp"
+            android:text="@string/welcome_to_fitness_app"
+            android:textAlignment="center"
+            android:textColor="#A1150B"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-216dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/mystyle"
+                android:width="120dp"
+                android:text="@string/user_name"
+                android:textColor="#FDFCFC" />
+
+            <EditText
+                android:id="@+id/txtUserName"
+                android:width="200dp"
+                android:textColor="#006400"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                style="@style/mystyle"
+                android:layout_width="142dp"
+                android:width="120dp"
+                android:text="@string/gender" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/mystyle"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:spinnerMode="dialog"
+                android:visibility="visible"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                style="@style/mystyle"
+                android:width="120dp"
+                android:text="@string/height" />
+
+            <EditText
+                android:id="@+id/txtHeight"
+                android:width="200dp"
+                android:hint="cm"
+                android:inputType="numberDecimal"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                style="@style/mystyle"
+                android:width="120dp"
+                android:text="@string/weight" />
+
+            <EditText
+                android:id="@+id/txtWeight"
+                android:width="200dp"
+                android:hint="KG"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                style="@style/mystyle"
+                android:width="120dp"
+                android:text="BMI" />
+
+            <EditText
+                android:id="@+id/editCalculatBMI"
+                android:width="200dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnCalBMI"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:onClick="btnOnClickCalBMI"
+            android:text="Calculate the BMI"
+            android:textColor="#FFEB3B"
+            tools:ignore="OnClick" />
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+               android:onClick="btnonClickSaveData"
+                android:text="Save"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <Button
+                android:id="@+id/btnStart"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginRight="15dp"
+                android:onClick="btnOnClickStart"
+                android:text="Start"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:text="CheckBox" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:onClick="btnBack"
+            android:text="Back"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20dp" />
+    </TableLayout>
+
+
+</RelativeLayout>

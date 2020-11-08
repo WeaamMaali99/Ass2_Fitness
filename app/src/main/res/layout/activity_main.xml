@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo"
+        android:defaultFocusHighlightEnabled="false"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        android:forceHasOverlappingRendering="false"
+        android:keepScreenOn="false"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="265dp"
+        android:layout_height="272dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-23dp"
+        android:layout_marginTop="77dp"
+        android:text="Fitness App"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="55dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSingIn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="104dp"
+        android:onClick="btnSign"
+        android:text="Go"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
